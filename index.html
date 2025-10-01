@@ -13,9 +13,9 @@
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
+            line-height: 1.7;
+            color: #2c3e50;
+            background: #ffffff;
         }
 
         .container {
@@ -25,43 +25,49 @@
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #1a1a1a;
             color: white;
-            padding: 60px 20px;
+            padding: 80px 20px;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #333;
         }
 
         header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 300;
+            letter-spacing: -1px;
         }
 
         header p {
-            font-size: 1.2em;
-            opacity: 0.9;
+            font-size: 1.1em;
+            opacity: 0.7;
+            font-weight: 300;
         }
 
         .section {
             background: white;
-            margin: 30px 0;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 40px 0;
+            padding: 50px 60px;
+            border-radius: 0;
+            box-shadow: none;
+            border-bottom: 1px solid #e8e8e8;
         }
 
         .section h2 {
-            color: #667eea;
-            margin-bottom: 20px;
+            color: #1a1a1a;
+            margin-bottom: 30px;
             font-size: 2em;
-            border-bottom: 3px solid #667eea;
-            padding-bottom: 10px;
+            border-bottom: none;
+            padding-bottom: 0;
+            font-weight: 400;
         }
 
         .section h3 {
-            color: #764ba2;
+            color: #1a1a1a;
             margin: 30px 0 15px 0;
             font-size: 1.5em;
+            font-weight: 400;
         }
 
         .motivation-list {
@@ -69,36 +75,39 @@
         }
 
         .motivation-item {
-            margin: 20px 0;
-            padding: 20px;
-            background: #f8f9fa;
-            border-left: 4px solid #667eea;
-            border-radius: 5px;
+            margin: 25px 0;
+            padding: 0;
+            background: transparent;
+            border-left: 3px solid #1a1a1a;
+            padding-left: 20px;
+            border-radius: 0;
         }
 
         .motivation-item strong {
-            color: #764ba2;
-            font-size: 1.1em;
+            color: #1a1a1a;
+            font-size: 1em;
+            font-weight: 600;
         }
 
         .demo-card {
-            background: #f8f9fa;
-            border: 2px solid #e0e0e0;
-            border-radius: 10px;
-            padding: 30px;
-            margin: 30px 0;
-            transition: transform 0.2s, box-shadow 0.2s;
+            background: #fafafa;
+            border: 1px solid #e8e8e8;
+            border-radius: 0;
+            padding: 40px;
+            margin: 40px 0;
+            transition: none;
         }
 
         .demo-card:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+            transform: none;
+            box-shadow: none;
         }
 
         .demo-card h4 {
-            color: #667eea;
-            margin-bottom: 20px;
+            color: #1a1a1a;
+            margin-bottom: 30px;
             font-size: 1.3em;
+            font-weight: 500;
         }
 
         .audio-comparison {
@@ -110,16 +119,17 @@
 
         .audio-player {
             background: white;
-            padding: 20px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 0;
+            border: 1px solid #e0e0e0;
         }
 
         .audio-label {
-            font-weight: 600;
-            color: #555;
-            margin-bottom: 10px;
+            font-weight: 500;
+            color: #1a1a1a;
+            margin-bottom: 15px;
             display: block;
+            font-size: 0.95em;
         }
 
         audio {
@@ -128,20 +138,22 @@
         }
 
         .transcription {
-            background: white;
+            background: #f9f9f9;
             padding: 15px;
-            border-radius: 5px;
-            margin: 10px 0;
-            border-left: 4px solid #667eea;
-            font-style: italic;
+            border-radius: 0;
+            margin: 15px 0 0 0;
+            border-left: 3px solid #1a1a1a;
+            font-style: normal;
+            color: #555;
         }
 
         .transcription-label {
-            font-weight: 600;
-            color: #667eea;
+            font-weight: 500;
+            color: #1a1a1a;
             font-style: normal;
             display: block;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            font-size: 0.9em;
         }
 
         .metrics {
@@ -153,53 +165,61 @@
 
         .metric {
             background: white;
-            padding: 15px;
-            border-radius: 5px;
+            padding: 20px;
+            border-radius: 0;
             text-align: center;
-            border: 2px solid #667eea;
+            border: 1px solid #e0e0e0;
         }
 
         .metric-label {
-            font-size: 0.9em;
+            font-size: 0.85em;
             color: #666;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .metric-value {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #667eea;
+            font-size: 1.4em;
+            font-weight: 400;
+            color: #1a1a1a;
         }
 
         .github-link {
             display: inline-block;
-            background: #333;
+            background: #1a1a1a;
             color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
+            padding: 14px 30px;
+            border-radius: 0;
             text-decoration: none;
             margin: 20px 0;
-            transition: background 0.3s;
+            transition: background 0.2s;
+            font-weight: 400;
+            font-size: 0.95em;
         }
 
         .github-link:hover {
-            background: #555;
+            background: #333;
         }
 
         footer {
             text-align: center;
-            padding: 30px;
-            color: #666;
-            margin-top: 50px;
+            padding: 40px;
+            color: #999;
+            margin-top: 60px;
+            border-top: 1px solid #e8e8e8;
+            font-size: 0.9em;
         }
 
         .citation {
-            background: #f8f9fa;
+            background: #fafafa;
             padding: 20px;
-            border-radius: 5px;
-            font-family: monospace;
+            border-radius: 0;
+            font-family: 'Courier New', monospace;
             margin: 20px 0;
-            border-left: 4px solid #764ba2;
+            border-left: 3px solid #1a1a1a;
+            font-size: 0.95em;
+            color: #555;
         }
 
         @media (max-width: 768px) {
@@ -223,7 +243,7 @@
 </head>
 <body>
     <header>
-        <h1>🎯 Attacking Whisper</h1>
+        <h1>Attacking Whisper</h1>
         <p>Whitebox Adversarial Attacks on Speech-to-Text Models</p>
     </header>
 
@@ -234,15 +254,15 @@
             
             <div class="motivation-list">
                 <div class="motivation-item">
-                    <strong>💰 Financial Theft:</strong> An attacker could embed an inaudible command like "Alexa, buy a £500 gift card and send it to this email" into the background music of a YouTube video or podcast you're listening to. If your smart speaker is within earshot, it would execute the purchase without you ever hearing the command.
+                    <strong>Financial Theft:</strong> An attacker could embed an inaudible command like "Alexa, buy a £500 gift card and send it to this email" into the background music of a YouTube video or podcast you're listening to. If your smart speaker is within earshot, it would execute the purchase without you ever hearing the command.
                 </div>
 
                 <div class="motivation-item">
-                    <strong>🔓 Physical Security Breach:</strong> A command like "Hey Google, unlock the front door" or "Siri, disable the security cameras" could be hidden in a TV commercial. This could be timed to facilitate a burglary, with the attacker knowing exactly when your smart lock will disengage.
+                    <strong>Physical Security Breach:</strong> A command like "Hey Google, unlock the front door" or "Siri, disable the security cameras" could be hidden in a TV commercial. This could be timed to facilitate a burglary, with the attacker knowing exactly when your smart lock will disengage.
                 </div>
 
                 <div class="motivation-item">
-                    <strong>👂 Covert Surveillance:</strong> An attacker could broadcast a hidden command like "Siri, call [attacker's number] and turn on speakerphone." This would effectively turn your phone into a hot mic, allowing the attacker to eavesdrop on your private conversations, business meetings, or family moments.
+                    <strong>Covert Surveillance:</strong> An attacker could broadcast a hidden command like "Siri, call [attacker's number] and turn on speakerphone." This would effectively turn your phone into a hot mic, allowing the attacker to eavesdrop on your private conversations, business meetings, or family moments.
                 </div>
             </div>
 
@@ -270,7 +290,7 @@
                 
                 <div class="audio-comparison">
                     <div class="audio-player">
-                        <span class="audio-label">🔊 Original Audio</span>
+                        <span class="audio-label">Original Audio</span>
                         <audio controls>
                             <source src="./assets/example1_clean.wav" type="audio/wav">
                             <source src="./assets/example1_clean.mp3" type="audio/mpeg">
@@ -283,7 +303,7 @@
                     </div>
 
                     <div class="audio-player">
-                        <span class="audio-label">⚠️ Perturbed Audio</span>
+                        <span class="audio-label">Perturbed Audio</span>
                         <audio controls>
                             <source src="./assets/example1_perturbed.wav" type="audio/wav">
                             <source src="./assets/example1_perturbed.mp3" type="audio/mpeg">
@@ -314,7 +334,7 @@
                 
                 <div class="audio-comparison">
                     <div class="audio-player">
-                        <span class="audio-label">🔊 Original Audio</span>
+                        <span class="audio-label">Original Audio</span>
                         <audio controls>
                             <source src="./assets/example2_clean.wav" type="audio/wav">
                             <source src="./assets/example2_clean.mp3" type="audio/mpeg">
@@ -327,7 +347,7 @@
                     </div>
 
                     <div class="audio-player">
-                        <span class="audio-label">⚠️ Perturbed Audio</span>
+                        <span class="audio-label">Perturbed Audio</span>
                         <audio controls>
                             <source src="./assets/example2_perturbed.wav" type="audio/wav">
                             <source src="./assets/example2_perturbed.mp3" type="audio/mpeg">
@@ -367,13 +387,13 @@
             </div>
             
             <a href="https://github.com/yourusername/whisper-attacks" class="github-link">
-                📂 View Full Project on GitHub
+                View Full Project on GitHub
             </a>
         </section>
     </div>
 
     <footer>
-        <p>Built as part of adversarial ML research | <a href="https://github.com/yourusername" style="color: #667eea; text-decoration: none;">GitHub Profile</a></p>
+        <p>Built as part of adversarial ML research | <a href="https://github.com/yourusername" style="color: #1a1a1a; text-decoration: none;">GitHub Profile</a></p>
     </footer>
 </body>
 </html>
