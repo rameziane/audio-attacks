@@ -1,4 +1,4 @@
-# AISB Project
+# AI Security Bootcamp Capstone Project
 
 
 ## Motivation
